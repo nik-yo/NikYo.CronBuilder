@@ -5,6 +5,16 @@
     <LangVersion>preview</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>0.1.0</Version>
+    <Authors>Nikki Yodo</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>A simple package to build cron expression.</Description>
+    <PackageTags>cron</PackageTags>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageProjectUrl>https://github.com/nikyodo85/CronBuilder</PackageProjectUrl>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>
