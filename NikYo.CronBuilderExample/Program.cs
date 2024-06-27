@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-var builder = new CronBuilder.Builder();
+var builder = new NikYo.CronBuilder.Builder();
 
 // Standard (minute granularity)
 var cronExp = builder

@@ -1,4 +1,4 @@
-﻿namespace CronBuilder.Fields
+﻿namespace NikYo.CronBuilder.Fields
 {
     public class Minute : CronField
     {

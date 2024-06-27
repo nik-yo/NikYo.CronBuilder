@@ -1,4 +1,4 @@
-﻿namespace CronBuilder
+﻿namespace NikYo.CronBuilder
 {
     public abstract class CronField
     {

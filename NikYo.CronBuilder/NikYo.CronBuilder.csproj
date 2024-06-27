@@ -13,9 +13,14 @@
     <PackageTags>cron</PackageTags>
     <RepositoryUrl></RepositoryUrl>
     <PackageProjectUrl>https://github.com/nikyodo85/CronBuilder</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>

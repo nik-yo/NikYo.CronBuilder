@@ -1,4 +1,4 @@
-﻿namespace CronBuilder
+﻿namespace NikYo.CronBuilder
 {
     internal static class CronBuilderExtensions
     {

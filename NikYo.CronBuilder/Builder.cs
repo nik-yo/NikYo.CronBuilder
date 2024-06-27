@@ -1,7 +1,7 @@
-﻿using CronBuilder.Fields;
-using CronBuilder.Granularity;
+﻿using NikYo.CronBuilder.Fields;
+using NikYo.CronBuilder.Granularity;
 
-namespace CronBuilder
+namespace NikYo.CronBuilder
 {
     public class Builder
     {
