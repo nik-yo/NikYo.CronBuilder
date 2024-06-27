@@ -1,7 +1,7 @@
-﻿using CronBuilder.Fields;
-using DayOfWeek = CronBuilder.Fields.DayOfWeek;
+﻿using NikYo.CronBuilder.Fields;
+using DayOfWeek = NikYo.CronBuilder.Fields.DayOfWeek;
 
-namespace CronBuilder
+namespace NikYo.CronBuilder
 {
     public abstract class CronLastField : CronField
     {

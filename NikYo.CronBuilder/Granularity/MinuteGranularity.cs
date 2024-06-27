@@ -1,6 +1,6 @@
-﻿using CronBuilder.Fields;
+﻿using NikYo.CronBuilder.Fields;
 
-namespace CronBuilder.Granularity
+namespace NikYo.CronBuilder.Granularity
 {
     public class MinuteGranularity : CronGranularity
     {

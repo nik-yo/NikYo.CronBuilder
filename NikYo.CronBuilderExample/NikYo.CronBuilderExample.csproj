@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CronBuilder\CronBuilder.csproj" />
+    <ProjectReference Include="..\NikYo.CronBuilder\NikYo.CronBuilder.csproj" />
   </ItemGroup>
 
 </Project>

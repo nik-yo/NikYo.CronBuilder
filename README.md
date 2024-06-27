@@ -11,7 +11,7 @@ A simple package to build cron expression.
 Run the following command in the Nuget Package Manager Console:
 
 ```
-PM> Install-Package CronBuilder
+PM> Install-Package NikYo.CronBuilder
 ```
 
 ### Target Framework
@@ -21,7 +21,7 @@ PM> Install-Package CronBuilder
 ## Usage
 
 ```
-var builder = new CronBuilder.Builder();
+var builder = new NikYo.CronBuilder.Builder();
 
 // Standard (minute granularity)
 var cronExp = builder
@@ -103,4 +103,4 @@ It doesn't come with expression validation at the moment, but I plan to add it i
 
 ## License
 
-Free for all.
+MIT License

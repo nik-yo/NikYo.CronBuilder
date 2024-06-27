@@ -1,6 +1,6 @@
-﻿using CronBuilder.Granularity;
+﻿using NikYo.CronBuilder.Granularity;
 
-namespace CronBuilder.Fields
+namespace NikYo.CronBuilder.Fields
 {
     public class Second : CronField
     {
