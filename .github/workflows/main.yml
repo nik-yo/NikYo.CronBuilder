@@ -1,0 +1,16 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: NuGet/setup-nuget@v2.0.0
+        with:
+          nuget-api-key: ${{ secrets.NUGET_API_KEY }}
+      - run: |
+          cd CronBuilder
+          dotnet pack
+          nuget push *.nupkg -Source https://api.nuget.org/v3/index.json
