@@ -6,13 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>NikYo.CronBuilder</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Nikki Yodo</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>A simple package to build cron expression.</Description>
     <PackageTags>cron</PackageTags>
     <RepositoryUrl></RepositoryUrl>
-    <PackageProjectUrl>https://github.com/nikyodo85/CronBuilder</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/nik-yo/NikYo.CronBuilder</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
