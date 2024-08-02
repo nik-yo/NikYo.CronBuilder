@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using NikYo.CronBuilder.Fields;
+
 Console.WriteLine("Hello, World!");
 
 var builder = new NikYo.CronBuilder.Builder();
@@ -76,6 +78,18 @@ catch (ArgumentOutOfRangeException ex)
 // Every 5 minutes
 Console.WriteLine($"Every 5 minutes: {builder.MinuteEvery(5)}");
 
+// Field Value
 
+var cronFieldValueExp = builder
+                        .WithSecondGranularity()
+                        .AddSecond(SecondFieldValue.Asterisk)
+                        .AddMinute(MinuteFieldValue.Range(0, 10))
+                        .AddHour(HourFieldValue.Fields(HourFieldValue.Hour(1), HourFieldValue.Range(2, 3)))
+                        .AddDayOfMonth(DayOfMonthFieldValue.Any)
+                        .AddMonth(MonthFieldValue.Range(MonthPart.January, MonthPart.March))
+                        .AddDayOfWeek(DayOfWeekFieldValue.Monday)
+                        .AddYear("*").Build();
+
+Console.WriteLine($"Field Value: {cronFieldValueExp}");
 
 Console.ReadKey();

@@ -4,7 +4,7 @@ A simple package to build cron expression.
 
 ## Version
 
-0.0.1
+0.2.0
 
 ## Installation
 
@@ -95,11 +95,25 @@ catch (ArgumentOutOfRangeException ex)
 
 // Every 5 minutes
 Console.WriteLine($"Every 5 minutes: {builder.MinuteEvery(5)}");
+
+// Field Value
+
+var cronFieldValueExp = builder
+                        .WithSecondGranularity()
+                        .AddSecond(SecondFieldValue.Asterisk)
+                        .AddMinute(MinuteFieldValue.Range(0, 10))
+                        .AddHour(HourFieldValue.Fields(HourFieldValue.Hour(1), HourFieldValue.Range(2, 3)))
+                        .AddDayOfMonth(DayOfMonthFieldValue.Any)
+                        .AddMonth(MonthFieldValue.Range(MonthPart.January, MonthPart.March))
+                        .AddDayOfWeek(DayOfWeekFieldValue.Monday)
+                        .AddYear("*").Build();
+
+Console.WriteLine($"Field Value: {cronFieldValueExp}");
 ```
 
 ## Limitations
 
-It doesn't come with expression validation at the moment, but I plan to add it in the future version.
+It doesn't come with overall expression validation at the moment.
 
 ## License
 

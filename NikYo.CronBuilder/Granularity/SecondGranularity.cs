@@ -16,5 +16,7 @@ namespace NikYo.CronBuilder.Granularity
 
             return new Second(_cron);
         }
+
+        public Second AddSecond(SecondFieldValue fieldValue) => AddSecond(fieldValue.Value);
     }
 }

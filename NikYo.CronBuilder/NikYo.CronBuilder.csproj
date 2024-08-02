@@ -12,7 +12,7 @@
     <Description>A simple package to build cron expression.</Description>
     <PackageTags>cron</PackageTags>
     <RepositoryUrl></RepositoryUrl>
-    <PackageProjectUrl>https://github.com/nikyodo85/CronBuilder</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/nik-yo/NikYo.CronBuilder</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
